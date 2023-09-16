@@ -1083,6 +1083,11 @@
     position: relative;
     right: -75px;
   }
+  .border-tablet{
+    border: 1px solid rgba(230, 230, 230, 1);
+    position: relative;
+    top: -50px;
+  }
 
 
 }
