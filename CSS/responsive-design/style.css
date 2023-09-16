@@ -964,7 +964,7 @@
     margin: 8rem 2rem 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.75fr 1fr;
   }
 
   .about-me .baby-img {
@@ -973,7 +973,7 @@
   }
   .about-me .young-img {
     width: 100%;
-    height: 530px;
+    height: 400px;
   }
   .about-me .old-img {
     width: 100%;
@@ -1176,4 +1176,7 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+.about-me img{
+  display: block;
 }
