@@ -569,7 +569,7 @@
   .quote {
     background-image: url(./assets/background-center.png);
     background-size: cover;
-    margin: 3rem 4rem;
+    margin: 3rem 0rem;
     padding: 3rem 9rem;
     text-align: center;
   }
