@@ -1,16 +1,25 @@
 import './style.css'
+const givenStr = prompt("please enter your string before each new line you can use /n");
+const givenSymbolForComment = prompt("enter your comment symbols seperated by comma").split(",")
 
-let givenStr = prompt("please enter your string");
-const givenArryOfSymbol = prompt("please enter your symboles , seperated with comma")
+function removeComments(inputString, commentSymbols) {
 
-function convertToHour(str , arry) {
-  str = str.trimEnd();
+  const lines = inputString.split('\n');
 
-  for (let i = 0; i < arry.length; i++) {
-    const element = array[i];
-    
+  for (let i = 0; i < lines.length; i++) {
+    for (const symbol of commentSymbols) {
+      const index = lines[i].indexOf(symbol);
+      if (index !== -1) {
+        lines[i] = lines[i].substring(0, index);
+        break; 
+      }
+    }
   }
 
+  return lines.join('\n').trimEnd();
 }
-convertToHour(givenNumb);
-console.log(convertToHour(givenNumb));
+
+
+const result = removeComments(givenStr, givenSymbolForComment);
+
+console.log(result); 
