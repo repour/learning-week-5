@@ -68,10 +68,10 @@ function App() {
     } else {
       const rate = exchangeRates[toCurrency] / exchangeRates[fromCurrency];
       if (amountFrom !== null) {
-        const result = (amountFrom * rate).toFixed(2);
+        const result = (amountFrom * rate)//.toFixed(2);
         setAmountTo(result);
       } else if (amountTo !== null) {
-        const result = (amountTo / rate).toFixed(2);
+        const result = (amountTo / rate)//.toFixed(2);
         setAmountFrom(result);
       }
     }
